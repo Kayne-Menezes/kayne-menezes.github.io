@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/docs/styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="/styles/styles.css" rel="stylesheet" type="text/css">
     <title>Relative, Absolute, Fixed Positioning</title>
 </head>
 <body>
@@ -11,10 +11,10 @@
         <header class="banner">
             <div class="logo-title">
                 <div class="logo">
-                    <img id="rocket-logo" href="/docs/index.html" src="/docs/Photos/rocket.png" alt="Icons made by Flaticon"/>
+                    <img id="rocket-logo" href="/index.html" src="/Photos/rocket.png" alt="Icons made by Flaticon"/>
                 </div>
                 <div>
-                    <h1 id="banner-name"><a id="banner-link" href="/docs/index.html">KAYNE'S BLOG</a></h1>
+                    <h1 id="banner-name"><a id="banner-link" href="/index.html">KAYNE'S BLOG</a></h1>
                 </div>
             </div>
             <div class="directory">
@@ -22,9 +22,9 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li> | </li>
-                        <li><a href="/blog/identity-values.html">Core</a></li>
+                        <li><a href="identity-values.html">Core</a></li>
                         <li> | </li>
-                        <li><a href="/blog/html-css.html">Technical</a></li>
+                        <li><a href="html-css.html">Technical</a></li>
                     </ul>
                 </nav>
             </div>
@@ -42,13 +42,13 @@
         <span class="bold">Relative Positioning</span> – You can set a relative position using the line below:
       </p>
       <div>
-        <img id="img1" src="/docs/Photos/img1.png" alt="position: relative;"/>
+        <img id="img1" src="/Photos/img1.png" alt="position: relative;"/>
       </div>
       <p>
         The Orange box is the original position of our ‘Relative Positioning’ box. The Yellow box is the new position, relative to the original position. See the code below:
       </p>
       <div>
-        <img id="img2" src="/docs/Photos/img2.png" alt="yellow-box"/>
+        <img id="img2" src="/Photos/img2.png" alt="yellow-box"/>
       </div>
       <p>
         The code isn’t too intuitive in my opinion but it does make sense. Our relative position is like tracing a line back to the original position of the box. The original position of the box (Orange) is 500px to the left of it’s new position. The original position is also 200px above (top) the new position. Therefore, if you wanted to superimpose the Yellow box on top of the Orange box, you would simply move it 500px to the left, and 200px above.
@@ -57,7 +57,7 @@
         <span class="bold">Absolute Positioning</span> – You can set an absolute position using the line below:
       </p>
       <div>
-        <img id="img3" src="/docs/Photos/img3.png" alt="position: absolute;"/>
+        <img id="img3" src="/Photos/img3.png" alt="position: absolute;"/>
       </div>
       <p>
         The Purple box is a our ‘Absolute Positioning’ example. When we don’t specify a static position, our elements are generally positioned absolutely by default. An absolute position is a essentially a position on the page where the element will go regardless of any other elements around, in or on top of it (assuming there is no z-index value assigned). 
@@ -66,7 +66,7 @@
         The Purple box originally appeared under the Orange box:
       </p>
       <div>
-        <img id="img4" src="/docs/Photos/img4.png" alt="htmlcode"/>
+        <img id="img4" src="/Photos/img4.png" alt="htmlcode"/>
       </div>
       <p>
         If you specify a top, right, bottom and left positions in an absolute position, the element will go to that position. Eg. the Pink box is 350px from the top of the page, and 800px from the left of the page.
@@ -75,7 +75,7 @@
         <span class="bold">Fixed Positioning</span> – A ‘Fixed Position’ element is positioned relative to the viewport, which means it stays in the same position on the screen even if the page is scrolled. In our example, the Red box is a fixed position box as per the code below:
       </p>
       <div>
-        <img id="img5" src="/docs/Photos/img5.png" alt="position: fixed;"/>
+        <img id="img5" src="/Photos/img5.png" alt="position: fixed;"/>
       </div>
       <p>
         The banner of my page is Fixed to allow the user to navigate across pages by clicking the navigation links on it.
@@ -85,8 +85,8 @@
       </p>
     </section>
     <section>
-      <button type="button" id="back-button"><a href="/blog/te-houtaewa-template.html">Back</a></button>
-      <button type="button" id="next-button"><a href="/blog/identity-values.html">Next</a></button>
+      <button type="button" id="back-button"><a href="/te-houtaewa-template.html">Back</a></button>
+      <button type="button" id="next-button"><a href="/identity-values.html">Next</a></button>
     </section>
     <section>
       <div class="yellow-box"></div>

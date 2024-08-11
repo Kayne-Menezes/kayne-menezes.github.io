@@ -86,7 +86,7 @@ nav a:hover {
 
 .content {
   padding-top: 160px;
-  margin: 10px;
+  margin: 20px;
   color: #f2e9e4;
   padding-left: 20px;
 }
@@ -105,6 +105,16 @@ h2 {
   margin-left: 20px;
 }
 
+h3 {
+  margin: 20px;
+}
+
+h4 {
+  margin: 20px;
+  text-decoration: underline;
+  color: #f2e9e4;
+}
+
 #date {
   margin-left: 20px;
 }
@@ -112,8 +122,13 @@ h2 {
 p {
   font-family: 'Roboto-Mono', Impact, Haettenschweiler, 'Arial Narrow Bold',
     sans-serif;
-  color: #9a8c98;
+  color: #f2e9e4;
   font-size: medium;
+  margin: 20px;
+}
+
+img {
+  margin: 20px;
 }
 
 ul a {

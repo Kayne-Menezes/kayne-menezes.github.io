@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/styles.css" rel="stylesheet" type="text/css">
+    <title>Emotional Intelligence</title>
+</head>
+<body>
+    <section>
+        <header class="banner">
+            <div class="logo-title">
+                <div class="logo">
+                    <img id="rocket-logo" href="/index.html" src="/Photos/rocket.png" alt="Icons made by Flaticon"/>
+                </div>
+                <div>
+                    <h1 id="banner-name"><a id="banner-link" href="/index.html">KAYNE'S BLOG</a></h1>
+                </div>
+            </div>
+            <div class="directory">
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li> | </li>
+                        <li><a href="/blog/identity-values.html">Core</a></li>
+                        <li> | </li>
+                        <li><a href="/blog/html-css.html">Technical</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <section class="content">
+      <h1>Core Part 2 | Emotional Intelligence</h1>
+      <h2></h2>
+      <h3>11 August 2024</h3>
+      <h4>What is EQ and IQ?</h4>
+      <p>
+        Intelligence Quotient (IQ) is the ability to think analytically, to problem solve in a methodical and logical process. It allows us to apply rationality to a complex problem by amongst other things, predicting the outcomes of similar problems in the past, recognising patterns and applying them effectively.
+
+Emotional Quotient (EQ) is an ability to regulate your own emotions and understand the emotions of yourself and others. It plays a pivotal role in how we communicate with others and can have a strong effect on influencing the behaviours of ourselves and the people around us. 
+
+To build a more complete individual we need both EQ and IQ. 
+      </p>
+      <h4>Why is EQ so important?</h4>
+      <p>
+        EQ is incredibly important in building mental resolve, lifting up others around you, and understanding your own emotions and those of others to connect in a meaningful way. It allows us to process the uncertainty of the problems we face, when we there doesn’t seem to be any ‘pattern’ for recognising and applying a logical solution. It allows us to regulate our emotions despite the pressures we face. 
+
+When we work in a team environment, EQ is especially important. It helps us understand our team mates, the struggles we’re all facing. This understanding is the basis to creating a positive environment where all participants are adding value. 
+      </p>
+      <h4>Application:</h4>
+      <p>This week, we talked to each other in a ‘Listening and Looping’ exercise where we would spend time actively listening to a classmates experience – whether it be the week of coding, the pressures of the year, or their life. It allowed me realise that we’re all going through similar pressures and we’re not necessarily in it alone. It helped build trust in each other to help us grow together as a cohort and as individuals. </p>
+      <p>Stay tuned for future posts!</p>
+    </section>
+    <section>
+      <button type="button" id="back-button"><a href="javascript-dom.html">Back</a></button>
+      <button type="button" id="next-button"><a href="/index.html">Next</a></button>
+    </section>
+    
+</body>
+</html>

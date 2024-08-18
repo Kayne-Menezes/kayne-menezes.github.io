@@ -263,11 +263,15 @@ button a:hover {
 }
 
 #blogtitle {
-  font-size: 32px;
+  font-size: 24px;
 }
 
 .technicalpart {
   text-transform: uppercase;
+}
+
+.bold {
+  text-decoration: solid;
 }
 
 #listanswers {

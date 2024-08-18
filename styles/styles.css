@@ -253,6 +253,23 @@ button a:hover {
   margin: 20px;
 }
 
+.link-list {
+  font-size: medium;
+  font-family: 'Roboto-Mono', Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif;
+  color: #f2e9e4;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#blogtitle {
+  font-size: 32px;
+}
+
+.technicalpart {
+  text-transform: uppercase;
+}
+
 #listanswers {
   color: #9a8c98;
 }

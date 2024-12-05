@@ -1,10 +1,17 @@
+import React, { useState, useEffect } from 'react'
+import Tasks from './TodoList'
+
 function App() {
   return (
     <>
       <header className="header">
-        <h1>My Collection</h1>
+        <h1>To-Do List</h1>
       </header>
-      <section className="main">{/* add your code here */}</section>
+      <section className="main">
+        <div>
+          <Tasks />
+        </div>
+      </section>
     </>
   )
 }

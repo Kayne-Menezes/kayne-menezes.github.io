@@ -1,8 +1,11 @@
-import server from './server.ts'
+import express from 'express'
+import server from './server'
+import tasksRouter from './routes/tasks'
 
 const PORT = process.env.PORT || 3000
 
+server.use('/api/tasks', tasksRouter)
+
 server.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log('Listening on port', PORT)
+  console.log(`The Server is running at http://localhost:${PORT}`)
 })

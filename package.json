@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Build a fullstack collection app",
   "repository": "https://kayne-menezes.github.io",
-  "main": "server/index.ts",
+  "main": "dist/server.js",
   "scripts": {
     "start": "node dist/server.js",
     "dev": "run-p dev:client dev:server",
@@ -17,6 +17,7 @@
     "knex": "knex --knexfile ./server/db/knexfile.js",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'",
+    "postinstall": "npm run build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
@@ -36,10 +37,10 @@
     "express": "^4.21.2",
     "knex": "^2.5.1",
     "sqlite3": "^5.1.6",
-    "superagent": "^8.1.2"
+    "superagent": "^8.1.2",
+    "typescript": "^4.5.2"
   },
   "devDependencies": {
-    "@devacademy/eslint-config": "^1.10.1",
     "@tanstack/eslint-plugin-query": "^5.12.2",
     "@tanstack/react-query": "^5.12.2",
     "@tanstack/react-query-devtools": "^5.13.3",
@@ -72,7 +73,6 @@
     "sass": "^1.50.1",
     "supertest": "^6.3.4",
     "tsx": "^3.12.7",
-    "typescript": "^5.3.3",
     "vite": "^5.0.0",
     "vitest": "^1.2.0"
   },

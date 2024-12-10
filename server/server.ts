@@ -1,5 +1,6 @@
 import * as Path from 'node:path'
 import express from 'express'
+import tasksRouter from './routes/tasks'
 
 const server = express()
 

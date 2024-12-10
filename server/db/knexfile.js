@@ -8,7 +8,7 @@ const config = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: Path.join(__dirname, 'dev.sqlite3'),
+      filename: Path.join(__dirname, 'dev.sqlite3'), // Use dev.sqlite3 for development
     },
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
@@ -20,13 +20,13 @@ const config = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: ':memory:',
+      filename: ':memory:', // Use an in-memory database for testing
     },
     migrations: {
-      directory: Path.join(__dirname, 'migrations'),
+      directory: Path.join(__dirname, 'migrations'), // Migrations are in the same db folder
     },
     seeds: {
-      directory: Path.join(__dirname, 'seeds'),
+      directory: Path.join(__dirname, 'seeds'), // Seeds are in the same db folder
     },
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
@@ -37,7 +37,7 @@ const config = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: '/app/storage/prod.sqlite3',
+      filename: Path.join(__dirname, 'dev.sqlite3'), // Use dev.sqlite3 for production as well
     },
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),

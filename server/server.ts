@@ -8,11 +8,9 @@ app.use(express.json())
 app.use('/api/tasks', tasksRouter)
 
 if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(Path.resolve('public')))
-  app.use('/assets', express.static(Path.resolve('./dist/assets')))
-
+  app.use(express.static(Path.resolve('dist')))
   app.get('*', (req, res) => {
-    res.sendFile(Path.resolve('index.html'))
+    res.sendFile(Path.resolve('dist', 'index.html'))
   })
 }
 

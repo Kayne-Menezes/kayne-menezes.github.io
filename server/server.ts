@@ -1,17 +1,24 @@
-import * as Path from 'node:path'
 import express from 'express'
-import tasksRouter from './routes/tasks'
+import * as Path from 'node:path'
+import tasksRouter from './routes/tasks' // Adjust the import path according to your structure
 
-const server = express()
+const app = express()
+app.use(express.json())
 
-server.use(express.json())
+app.use('/api/tasks', tasksRouter)
 
 if (process.env.NODE_ENV === 'production') {
-  server.use(express.static(Path.resolve('public')))
-  server.use('/assets', express.static(Path.resolve('./dist/assets')))
-  server.get('*', (req, res) => {
-    res.sendFile(Path.resolve('./dist/index.html'))
+  app.use(express.static(Path.resolve('public')))
+  app.use('/assets', express.static(Path.resolve('./dist/assets')))
+
+  app.get('*', (req, res) => {
+    res.sendFile(Path.resolve('index.html'))
   })
 }
 
-export default server
+const PORT = process.env.PORT || 3000
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`)
+})
+
+export default app

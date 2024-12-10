@@ -1,11 +1,8 @@
-import express from 'express'
-import server from './server'
+import { Router } from 'express'
 import tasksRouter from './routes/tasks'
 
-const PORT = process.env.PORT || 3000
+const router = Router()
 
-server.use('/api/tasks', tasksRouter)
+router.use('/tasks', tasksRouter)
 
-server.listen(PORT, () => {
-  console.log(`The Server is running at ${PORT}`)
-})
+export default router

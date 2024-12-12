@@ -6,10 +6,9 @@ const server = express()
 server.use(express.json())
 
 if (process.env.NODE_ENV === 'production') {
-  server.use(express.static(Path.resolve('public')))
-  server.use('/assets', express.static(Path.resolve('./dist/assets')))
+  server.use(express.static(Path.resolve('dist')))
   server.get('*', (req, res) => {
-    res.sendFile(Path.resolve('./dist/index.html'))
+    res.sendFile(Path.resolve('dist/index.html'))
   })
 }
 

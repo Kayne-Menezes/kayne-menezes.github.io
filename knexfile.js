@@ -13,6 +13,12 @@ const config = {
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
     },
+    migrations: {
+      directory: path.join(__dirname, 'server/db/migrations'),
+    },
+    seeds: {
+      directory: path.join(__dirname, 'server/db/seeds'),
+    },
     useNullAsDefault: true,
   },
   test: {
@@ -22,10 +28,10 @@ const config = {
       filename: ':memory:',
     },
     migrations: {
-      directory: path.join(__dirname, 'migrations'),
+      directory: path.join(__dirname, 'server/db/migrations'),
     },
     seeds: {
-      directory: path.join(__dirname, 'seeds'),
+      directory: path.join(__dirname, 'server/db/seeds'),
     },
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
@@ -42,6 +48,9 @@ const config = {
     },
     migrations: {
       directory: path.join(__dirname, 'server/db/migrations'),
+    },
+    seeds: {
+      directory: path.join(__dirname, 'server/db/seeds'),
     },
   },
 }

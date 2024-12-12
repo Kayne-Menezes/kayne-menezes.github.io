@@ -1,6 +1,10 @@
-const path = require('path')
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-module.exports = {
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
+
+const config = {
   development: {
     client: 'sqlite3',
     connection: {
@@ -11,7 +15,6 @@ module.exports = {
     },
     useNullAsDefault: true,
   },
-
   test: {
     client: 'sqlite3',
     useNullAsDefault: true,
@@ -28,7 +31,6 @@ module.exports = {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
     },
   },
-
   production: {
     client: 'sqlite3',
     useNullAsDefault: true,
@@ -43,3 +45,5 @@ module.exports = {
     },
   },
 }
+
+export default config

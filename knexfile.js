@@ -36,5 +36,8 @@ module.exports = {
     pool: {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign keys = ON', cb),
     },
+    migrations: {
+      directory: './migrations',
+    },
   },
 }

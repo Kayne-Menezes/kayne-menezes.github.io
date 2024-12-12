@@ -41,7 +41,7 @@ const config = {
       afterCreate: (conn, cb) => conn.run('PRAGMA foreign_keys = ON', cb),
     },
     migrations: {
-      directory: path.join(__dirname, 'migrations'),
+      directory: path.join(__dirname, 'server/db/migrations'),
     },
   },
 }

@@ -1,0 +1,9 @@
+--2024-12-12 15:59:04--  ftp://devacademy.nz/kayne-menezes-full-stack-project
+           => ‘/etc/init/docker.conf’
+Resolving devacademy.nz (devacademy.nz)... 202.49.240.32
+Connecting to devacademy.nz (devacademy.nz)|202.49.240.32|:21... failed: Connection timed out.
+Retrying.
+
+--2024-12-12 16:01:20--  ftp://devacademy.nz/kayne-menezes-full-stack-project
+  (try: 2) => ‘/etc/init/docker.conf’
+Connecting to devacademy.nz (devacademy.nz)|202.49.240.32|:21... 

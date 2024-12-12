@@ -7,5 +7,5 @@ const PORT = process.env.PORT || 3000
 server.use('/api/tasks', tasksRouter)
 
 server.listen(PORT, () => {
-  console.log(`The Server is listening on port ${PORT}`)
+  console.log(`The Server is listening on Port ${PORT}`)
 })

@@ -1,5 +1,5 @@
 import express from 'express'
-import db from '../db/knex'
+import db from '../db/connection.ts'
 
 const router = express.Router()
 
